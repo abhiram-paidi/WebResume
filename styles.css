@@ -75,12 +75,17 @@ strong {
 /*  RESPONSIVENESS */
 @media (max-width: 768px) {
     #mainWhole {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
     
     #mainL, #mainR {
         margin: 0;
         padding: 0;
+    }
+    
+    section {
+        margin-top: 8px;
     }
     
     body {
